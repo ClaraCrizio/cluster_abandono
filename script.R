@@ -17,8 +17,7 @@ seges_em_2020 <- readRDS("/dados")
 #'Filtrando apenas ensino regular e alunos vivos, 
 #'Alterando tipo de dado e selecionando as variáveis de interesse para a análise:
 #'Obs.1: Usando apenas variáveis dos primeiros trimestres (faltas e notas).
-#'Obs.2: Em 2020 ninguém foi reprovado, então no processo de escalar os dados, a coluna "reprovado" ficou com NAs,
-#'por isso, acrescentei o comando de substituição dos NAs por zeros.
+#'Obs.2: Em 2020 ninguém foi reprovado, por isso a variável foi suprimida da análise.
 
 seges_em_2020 <- seges_em_2020 %>% 
   filter(MATRICULA_IN_REGULAR=="1", SITUACAO_CO_SITUACAO!="5",  SEGES_ID_ETAPA_MATRICULA=="18") %>% 
