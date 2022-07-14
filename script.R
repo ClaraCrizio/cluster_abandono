@@ -2,7 +2,6 @@
 #'Etapa: Testes com componentes principais
 #'Projeto: Estudos Educacionais/Preditor do Abandono
 #'Elaboração: Clara Crizio
-#'Data: 04/04/2022
 #'------------------------------------------------------------
 
 library(tidyverse)
